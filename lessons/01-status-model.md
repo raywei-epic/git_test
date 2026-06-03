@@ -50,6 +50,9 @@ git diff --staged
 ```bash
 git commit -m "Update app help text"
 git status
+
+# 检查提交的内容
+git show HEAD~1
 ```
 
 如果 `git status` 显示 `working tree clean`，说明当前没有未提交修改。
