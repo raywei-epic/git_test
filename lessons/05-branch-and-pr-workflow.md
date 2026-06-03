@@ -45,7 +45,7 @@ docs/git-lessons
 运行：
 
 ```bash
-git switch -d feature/delete
+git branch -d feature/delete
 git push origin --delete feature/delete
 ```
 
