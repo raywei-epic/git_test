@@ -40,7 +40,17 @@ fix/home-title
 docs/git-lessons
 ```
 
-## 练习 C：完成一个小功能
+## 练习 C：删除功能分支
+
+运行：
+
+```bash
+git switch -d feature/delete
+git push origin --delete feature/delete
+```
+
+
+## 练习 D：完成一个小功能
 
 修改 `app.txt`，加入：
 
@@ -64,7 +74,7 @@ git add app.txt
 git commit -m "Add help page notes"
 ```
 
-## 练习 D：检查 PR 前状态
+## 练习 E：检查 PR 前状态
 
 运行：
 
@@ -79,7 +89,7 @@ PR 前至少确认三件事：
 - commit 信息能说明这次改动的目的。
 - 分支名能让 reviewer 大概知道你在做什么。
 
-## 练习 E：回到主分支
+## 练习 F：回到主分支
 
 运行：
 
