@@ -6,4 +6,4 @@ Home page:
 
 Todo:
 - add profile page
-- improve help text
+- improve help text for test github 
