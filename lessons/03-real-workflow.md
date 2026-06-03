@@ -49,6 +49,11 @@ git stash list
 git stash apply
 ```
 
+如果在错误的分支执行了git stash pop：
+```bash
+git reset --hard HEAD
+```
+
 ## 场景 B：新文件默认不会被普通 stash 保存
 
 创建一个新文件：
