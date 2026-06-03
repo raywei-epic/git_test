@@ -1,0 +1,9 @@
+# Mini App
+
+Home page:
+- title: Git practice app
+- description: A tiny file used to learn Git status and stash.
+
+Todo:
+- add profile page
+- improve help text
