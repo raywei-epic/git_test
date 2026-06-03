@@ -77,6 +77,40 @@ git log --oneline --graph --decorate --all -n 10
 git pull
 ```
 
+## 练习 E：制造冲突
+
+分别在两个文件夹中都拉一遍同一个git仓库，模拟两个用户同时修改一个文件，称为A用户和B用户
+
+对于A：对git仓库内的文件1进行写入，并push到git仓库中
+对于B：删除git仓库内的文件1，并尝试push到git仓库中
+
+B用户push时会发现报错。
+
+可以尝试merge：`git pull --no-rebase`，一定会出问题，因为两个修改是无法合并的。
+撤回操作：`git reset --hard HEAD~1`
+
+然后尝试rebase，rebase是指将B的操作抛弃，更新成A的操作。
+`git pull --rebase`
+这一步实际上已经把git远端仓库同步到本地了。
+
+那么接下来，针对冲突文件，可以保持A的写入，即
+```
+git add test.txt
+git rebase --continue
+```
+
+也可以保持B的删除，即
+```
+git rm test.txt
+git rebase --continue
+```
+
+
+
+
+
+
+
 ## 看到 ahead 和 behind 时怎么办
 
 如果 `git status` 提示：
