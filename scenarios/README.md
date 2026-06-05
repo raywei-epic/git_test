@@ -110,6 +110,18 @@
 - 能解释 `amend` 和 `squash` 分别解决什么问题。
 - 能说出为什么不要随便改共享分支的历史。
 
+## 任务卡 10：Git 职场 Galgame 综合演练
+
+目标：用小说/Galgame 风格的连续剧情，模拟一次日常开发中的完整 Git 管理流程。
+
+材料：`scenarios/10-git-office-galgame.md`
+
+完成标准：
+
+- 能按剧情完成状态检查、功能分支、stash、hotfix、远端同步、冲突解决、撤销误操作和 PR 前检查。
+- 能说出 `apply`、`pop`、`stash -u`、`fetch`、`pull`、`amend`、`squash` 分别适合什么场景。
+- 能在遇到不确定状态时先运行 `git status`，再决定下一步。
+
 ## 重置练习仓库
 
 如果你想重新开始练习，先确认这里没有重要内容，然后运行：
